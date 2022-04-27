@@ -71,7 +71,13 @@ footer {
 		}
 	}
 }
-
+ $estilosdesc: (
+	fondo: white,
+	borde: outset 5px $colorTerciario,
+	tamaño: 25px,
+	letra: "Times New Roman", Times, serif,
+	interlineado: 2,
+ );
 
 /* ------------------------ INDEX ------------------------*/
 .main-section {
@@ -97,12 +103,12 @@ footer {
 .empresa {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border: outset 5px $colorTerciario;
-  font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  background-color: map-get($map: estilosdsc, $key:fondo );
+  border:map-get($map: estilosdsc, $key:borde );
+  font-size:map-get($map: estilosdsc, $key:tamaño);
+  font-family: map-get($map: estilosdsc, $key:letra );
   margin: 60px 30px 60px 30px;
-  line-height: 2;
+  line-height:map-get($map: estilosdsc, $key: interlineado);
     .empresa__parrafo {
       color: black;
       font-style: italic;
