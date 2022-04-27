@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*sirve para que los bordes de las cajas no ocupen mas lugar por afuera del bloque*/
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background: #a3140f;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dela Gothic One";
+  color: black;
+}
+
+header {
+  background: #13504d;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  z-index: -1;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: gray;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #105652;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  bottom: 0%;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  color: #fa1f17;
+  font-size: 2.5rem;
+}
+
+footer ul li a:hover {
+  color: aliceblue;
+}
+
+/* ------------------------ INDEX ------------------------*/
+.main-section {
+  margin: 30px 30px 20px 30px;
+}
+
+.collapse .navbar-collapse {
+  height: 60vh;
+}
+
+.mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+  z-index: 1;
+}
+
+/*---------------------------EMPRESA----------------------------*/
+.empresa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border: outset 5px grey;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 60px 30px 60px 30px;
+  line-height: 2;
+}
+
+.empresa__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.empresa .empresa__parrafo {
+  color: black;
+  font-style: italic;
+  text-align: center;
+}
+
+.imagen__empresa {
+  width: 600px;
+  height: 700px;
+  padding: 0;
+  margin: 60px 30px;
+}
+
+.negrita {
+  text-transform: uppercase;
+  color: black;
+}
+
+/*-------------------------CERTIFICACION--------------------------*/
+.certificacion__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.certificacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border: outset 5px grey;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 60px 30px 60px 30px;
+  line-height: 2;
+}
+
+.certificacion .certificacion__parrafo {
+  color: black;
+  font-style: italic;
+  text-align: center;
+  margin: 0px 15px;
+}
+
+.imagen__certificado {
+  width: 600px;
+  height: 700px;
+  padding: 0;
+  margin: 60px 30px;
+}
+
+/*----------------------------EXPORTACION---------------------*/
+.exportacion__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.exportacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border: outset 5px grey;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 60px 30px;
+  line-height: 2;
+}
+
+.exportacion .exportacion__parrafo {
+  color: black;
+  font-style: italic;
+  text-align: center;
+  margin: 0px 15px;
+}
+
+.imagen__exportacion {
+  width: 600px;
+  height: 700px;
+  padding: 0;
+  margin: 60px 30px;
+}
+
+/* -------------------------CATALOGO-------------------------*/
+.catalogo__container {
+  width: 90%;
+  margin: 40px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 40px;
+  grid-row-gap: 150px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+}
+
+.catalogo__container p {
+  font-size: 23px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.catalogo__container p:hover {
+  background: grey;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.catalogo__imagen {
+  width: 60%;
+  height: 60%;
+}
+
+.catalogo__imagen:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+/*---------------------CONTACTO----------------------*/
+.form-register {
+  width: 800px;
+  background: #5c5e5f;
+  padding: 30px;
+  margin: 100px auto;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #807878;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid white;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+:-ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+::-ms-input-placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #e4e7e7;
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+input:focus {
+  background: #cac7ca;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+textarea:focus {
+  background: #cac7ca;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.botons:hover {
+  background: #cac7ca;
+}
+
+/*-----------------MEDIA QUERIE-------------------*/
+@media only screen and (max-width: 991px) {
+  footer {
+    font-size: 1rem;
+  }
+  /*inicio*/
+  .galeria__container {
+    padding: 100px 0px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .galeria__imagen {
+    width: 350px;
+    height: 350px;
+  }
+  /*empresa*/
+  .empresa__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*certificacion*/
+  .certificacion__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*exportacion*/
+  .exportacion__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*catalogo*/
+  .catalogo__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px 0px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .catalogo__container p {
+    font-size: 1.5rem;
+  }
+  .catalogo__imagen {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/*----------------------------------------------------------------------------*/
+@media only screen and (max-width: 479px) {
+  footer {
+    font-size: 1rem;
+  }
+  /*catalogo*/
+  .catalogo__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    padding: 0px;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+  }
+  .catalogo__container p {
+    font-size: 25px;
+  }
+  .catalogo__imagen {
+    width: 350px;
+    height: 350px;
+  }
+  /*exportacion*/
+  .imagen__exportacion {
+    width: 350px;
+    height: 350px;
+  }
+  /*contacto*/
+  .form-register {
+    width: 350px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
