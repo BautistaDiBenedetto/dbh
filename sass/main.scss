@@ -8,7 +8,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-repeat: no-repeat;
-  background: $colorPrimario;
+  background: #c42525;
   text-decoration-color: white;
 }
 
@@ -18,8 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Dela Gothic One";
-  color: black;
+  font-family: 'PT Serif', serif;
+  color: white;
 }
 
 header {
@@ -50,7 +50,8 @@ header {
 }
 footer {
 	text-align: center;
-	font-size: 1.5rem;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1rem;
 	background-color: $colorSecundario;
 	color: white;
 	padding: 20px;
@@ -93,42 +94,67 @@ footer {
 	justify-content: space-around;
 	padding: 10px;
 }
-/* maps */
-$estilosdesc:
-(
-   fondo: white,
-   borde: outset 5px $colorTerciario,
-   tamaño: 25px,
-   letra: "Times New Roman",
-   interlineado: 2,
-);
-.empresa {
-	display: flex;
+
+.empresa__item {
+  display: flex;
   flex-direction: column;
-  background-color:map-get($estilosdesc,fondo);
-  border:map-get($estilosdesc,borde);
-  font-size:map-get($estilosdesc,tamaño);
-  font-family: map-get($estilosdesc,letra);
+  font-size: 20px;
+  font-family: "Times New Roman";
   margin: 60px 30px 60px 30px;
-  line-height: map-get($estilosdesc,interlineado);
+  line-height: 2;
     .empresa__parrafo {
-      color: black;
+      color: white;
       font-style: italic;
-      text-align: center;
+      text-align: left;
     }
+	.negrita {
+	  text-transform: uppercase;
+	  color: white;
+	}
+}
+.empresa__item__dos{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2,1fr);
+	gap: 15px;
+	
 }
 
-
-.imagen__empresa {
-  width: 600px;
-  height: 700px;
-  padding: 0;
-  margin: 60px 30px;
+.emp1 {
+	width: 630px;
+	height: 400px;
+	margin: 170px 0px 0px 0px;
+	grid-column: 1 /span 3;
+	grid-row: 1/2;
 }
+.emp2{
+	width: 200px;
+	height: 150px;
+	grid-column: 1/2;
+	grid-row: 2/3;
 
-.negrita {
-  text-transform: uppercase;
-  color: black;
+}
+.emp3{
+	width: 200px;
+	height: 150px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+.emp4{
+	width: 200px;
+	height: 150px;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+.emp2:hover{
+	position: relative;
+	transform: scale(2.5);
+}
+.emp3:hover{
+	transform: scale(2.5)
+}
+.emp4:hover{
+	transform: scale(2.5);
 }
 
 /*-------------------------CERTIFICACION--------------------------*/
@@ -141,23 +167,24 @@ $estilosdesc:
 .certificacion {
 	display: flex;
 	flex-direction: column;
-	background-color: white;
-	border: outset 5px $colorTerciario;
-	font-size: 25px;
+	font-size: 20px;
 	font-family: "Times New Roman", Times, serif;
 	margin: 60px 30px 60px 30px;
 	line-height: 2;
 	.certificacion__parrafo {
-		color: black;
+		color: white;
 		font-style: italic;
-		text-align: center;
-		margin: 0px 15px;
+		text-align: left;
+
 	}
 }
 
 
 .imagen__certificado {
-	@extend .imagen__empresa;
+	width: 600px;
+	height: 700px;
+	padding: 0;
+	margin: 60px 30px;
 }
 
 /*----------------------------EXPORTACION---------------------*/
@@ -170,32 +197,32 @@ $estilosdesc:
 .exportacion {
 	display: flex;
 	flex-direction: column;
-	background-color: white;
-	border: outset 5px $colorTerciario;
-	font-size: 25px;
+	font-size: 20px;
 	font-family: "Times New Roman", Times, serif;
 	margin: 60px 30px;
 	line-height: 2;
 	.exportacion__parrafo {
-		color: black;
+		color: white;
 		font-style: italic;
-		text-align: center;
-		margin: 0px 15px;
+		text-align: left;
 	}
 }
 
 
 .imagen__exportacion {
-  @extend .imagen__empresa;
+  width: 600px;
+  height: 700px;
+  padding: 0;
+  margin: 60px 30px;
 }
 
 /* -------------------------CATALOGO-------------------------*/
 
 .catalogo__container {
 	width: 90%;
-	margin: 40px auto;
+	margin: 50px 30px;
 	display: grid;
-	grid-gap: 40px;
+	grid-gap: 60px;
 	grid-row-gap: 150px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -205,20 +232,24 @@ $estilosdesc:
 		margin: 30px;
 		padding: 20px;
 		&:hover {
-			background: $colorTerciario;
 			transform: scale(1.05);
 			opacity: 0.8;
 		}
 	}
 }
-.catalogo__imagen {
-	width: 60%;
-	height: 60%;
-	&:hover {
-		transition: all 1s;
-		transform: scale(1.25);
-	}
+.img1{
+	width: 450px;
+	height: 650px;
 }
+.img2{
+	width: 450px;
+	height: 650px;
+}
+.img3{
+	width: 450px;
+	height: 650px;
+}
+
 
 
 /*---------------------CONTACTO----------------------*/
@@ -286,12 +317,6 @@ textarea {
 	}
 } 
 
-/* mixins */
-@mixin grids {
-	padding: 100px 0px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
 
 /*-----------------MEDIA QUERIE-------------------*/
 
@@ -303,7 +328,9 @@ textarea {
   /*inicio*/
 
   .galeria__container {
-	@include grids;
+	padding: 100px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     .galeria__imagen {
       width: 350px;
       height: 350px;
@@ -336,14 +363,23 @@ textarea {
   .catalogo__container {
     flex-direction: column;
     align-items: center;
-	@include grids;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     p {
       font-size: 1.5rem;
     }
-    .catalogo__imagen {
+    .img1 {
       width: 350px;
       height: 350px;
     }
+	.img2 {
+		width: 350px;
+		height: 350px;
+	  }
+	.img3 {
+		width: 350px;
+		height: 350px;
+	  }
   }
 
 }
@@ -354,7 +390,6 @@ textarea {
   footer {
     font-size: 1rem;
   }
-
   /*catalogo*/
 
   .catalogo__container {
@@ -385,5 +420,6 @@ textarea {
   .form-register {
     width: 350px;
   }
-
 }
+
+
