@@ -218,6 +218,11 @@ footer ul li a:hover {
   text-align: left;
 }
 
+.exportacion__video {
+  margin: 100px;
+  padding: -150px;
+}
+
 .distribuidor__container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -229,10 +234,10 @@ footer ul li a:hover {
 
 ul {
   list-style: none;
+  margin-top: 10px;
 }
 
 .distribuidor__container__arg:hover {
-  transform: scale(1.05);
   background-color: red;
   opacity: 0.9;
   border-radius: 10%;
