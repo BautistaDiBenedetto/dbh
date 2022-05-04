@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /*sirve para que los bordes de las cajas no ocupen mas lugar por afuera del bloque*/
+  box-sizing: border-box;
 }
 
 body {
@@ -103,7 +103,6 @@ footer {
 .collapse .navbar-collapse {
 	height: 60vh;
 }
-
 .mapa {
 	display: flex;
 	margin: 30px;
@@ -252,63 +251,54 @@ ul{
 .distribuidor__container__arg:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__bol:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__br:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__chi:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__ecu:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__mex:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__par:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__uru:hover{
 	background-color: rgba(255, 0, 0, 0.658);
 	color: white;
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
 .distribuidor__container__ven:hover{
 	color: white;
 	background-color: rgba(255, 0, 0, 0.658);
-	opacity: 0.9;
 	border-radius: 10%;
 	padding: 10px;
 }
