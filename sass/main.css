@@ -64,12 +64,12 @@ footer ul li {
 }
 
 footer ul li a {
-  color: #fa1f17;
+  color: white;
   font-size: 2.5rem;
 }
 
 footer ul li a:hover {
-  color: aliceblue;
+  color: #727272;
 }
 
 .footer__dos {
@@ -215,8 +215,8 @@ footer ul li a:hover {
 }
 
 .imagen__certificado {
-  width: 600px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   padding: 0;
   margin: 60px 30px;
 }
@@ -522,19 +522,19 @@ textarea:focus {
     font-size: 1rem;
   }
   .img1 {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   .img2 {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   .img3 {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   .imagen__certificado {
-    width: 300px;
+    width: 200px;
     height: 300px;
   }
   /*catalogo*/
